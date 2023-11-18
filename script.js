@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data.forEach(item => {
           updateRow(item);
         });
+        updateTotalScore(data);
       })
       .catch(error => console.error('Error fetching data:', error));
   });
@@ -23,3 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
+  function updateTotalScore(data) {
+    let totalScore = 0;
+    data.forEach(item => {
+      totalScore += item.score;
+    });
+    const averageScore = Math.round(totalScore / data.length);
+    const scoreElement = document.querySelector('.your-score');
+    if (scoreElement) scoreElement.textContent = averageScore;
+}
