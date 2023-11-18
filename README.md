@@ -21,7 +21,7 @@ This project is a response to the "Results Summary Component" challenge availabl
 
 ### Demo
 
-You can view the live demo of this project at [Live Demo](https://cerenss.github.io/workit-landing-page/).
+You can view the live demo of this project at [Live Demo](https://cerenss.github.io/results-summary-component/).
 
 ### Features
 
